@@ -1,77 +1,109 @@
 <section class="products container">
     <h2 id="products" class="products__title">Products</h2>
-    <div class="products__list">
-        <article class="product-card">
-            <img src="img/baby-yoda.svg" alt="Baby Yoda">
-            <h3 class="product-card__h3">Baby Yoda</h3>
-            <p class="product-card__description">Lorem ipsum <a href="#">dolor</a> sit amet consectetur, adipisicing
-                elit.
-                Porro
-                fuga autem possimus eveniet facere, non minus magnam obcaecati,
-                tenetur recusandae, corporis itaque suscipit. Vero illo nulla
-                asperiores laudantium tempore porro!
-            </p>
-            <div class="product-card__buttons">
-                <button class="product-card__buttons-info button button-card">
-                    Info
-                </button>
-                <button class="product-card__buttons-buy button button-card">
-                    Buy
-                </button>
+    <div class="products__list row">
+        <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
+            <img src="img/baby-yoda.svg" class="card-img-top" alt="Baby Yoda">
+            <div class="card-body">
+                <h5 class="card-title">Baby Yoda</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#product-info-modal">Info</a>
+                <a href="#" class="btn btn-primary">Buy</a>
             </div>
         </article>
-        <article class="product-card">
-            <img class="product-card__image" src="img/banana.svg" alt="Banana" />
-            <h3 class="product-card__h3">Banana</h3>
-            <p class="product-card__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
-                fuga autem possimus eveniet facere, non minus magnam obcaecati,
-                tenetur recusandae, corporis itaque suscipit. Vero illo nulla
-                asperiores laudantium tempore porro!
-            </p>
-            <div class="product-card__buttons">
-                <button class="product-card__buttons-info button button-card">
-                    Info
-                </button>
-                <button class="product-card__buttons-buy button button-card">
-                    Buy
-                </button>
+        <!-- Card 1: Banana -->
+        <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
+            <img src="img/banana.svg" class="card-img-top" alt="Banana">
+            <div class="card-body">
+                <h5 class="card-title">Banana</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro fuga autem possimus
+                    eveniet facere, non minus magnam obcaecati, tenetur recusandae, corporis itaque suscipit. Vero illo
+                    nulla asperiores laudantium tempore porro!</p>
+                <a href="#" class="btn btn-info">Info</a>
+                <a href="#" class="btn btn-primary">Buy</a>
             </div>
         </article>
-        <article class="product-card">
-            <img class="product-card__image" src="img/girl.svg" alt="Girl" />
-            <h3 class="product-card__h3">Girl</h3>
-            <p class="product-card__description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
-                fuga autem possimus eveniet facere, non minus magnam obcaecati,
-                tenetur recusandae, corporis itaque suscipit. Vero illo nulla
-                asperiores laudantium tempore porro!
-            </p>
-            <div class="product-card__buttons">
-                <button class="product-card__buttons-info button button-card">
-                    Info
-                </button>
-                <button class="product-card__buttons-buy button button-card">
-                    Buy
-                </button>
+
+        <!-- Card 2: Girl -->
+        <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
+            <img src="img/girl.svg" class="card-img-top" alt="Girl">
+            <div class="card-body">
+                <h5 class="card-title">Girl</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro fuga autem possimus
+                    eveniet facere, non minus magnam obcaecati, tenetur recusandae, corporis itaque suscipit. Vero illo
+                    nulla asperiores laudantium tempore porro!</p>
+                <a href="#" class="btn btn-info">Info</a>
+                <a href="#" class="btn btn-primary">Buy</a>
             </div>
         </article>
-        <article class="product-card">
-            <img class="product-card__image" src="img/viking.svg" alt="Viking" />
-            <h3 class="product-card__h3 viking">Viking</h3>
-            <p class="product-card__description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
-                fuga autem possimus eveniet facere, non minus magnam obcaecati,
-                tenetur recusandae, corporis itaque suscipit. Vero illo nulla
-                asperiores laudantium tempore porro!
-            </p>
-            <div class="product-card__buttons">
-                <button class="product-card__buttons-info button button-card">
-                    Info
-                </button>
-                <button class="product-card__buttons-buy button button-card">
-                    Buy
-                </button>
+
+        <!-- Card 3: Viking -->
+        <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
+            <img src="img/viking.svg" class="card-img-top" alt="Viking">
+            <div class="card-body">
+                <h5 class="card-title">Viking</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro fuga autem possimus
+                    eveniet facere, non minus magnam obcaecati, tenetur recusandae, corporis itaque suscipit. Vero illo
+                    nulla asperiores laudantium tempore porro!</p>
+                <a href="#" class="btn btn-info">Info</a>
+                <a href="#" class="btn btn-primary">Buy</a>
             </div>
         </article>
     </div>
+
+    <ul class="nav nav-tabs" id="product-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Baby Yoda</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane"
+                type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false"
+                disabled>Disabled</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="product-tabsContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <img src="img/baby-yoda.svg" class="card-img-top d-block w-50 mx-auto" alt="Baby Yoda">
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <img src="img/banana.svg" class="card-img-top d-block w-50 mx-auto" alt="Banana">
+        </div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+            <img src="img/girl.svg" class="card-img-top d-block w-50 mx-auto" alt="Girl">
+        </div>
+        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+            <img src="img/viking.svg" class="card-img-top d-block w-50 mx-auto" alt="Viking">
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="product-info-modal" tabindex="-1" aria-labelledby="product-info-modalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="product-info-modalLabel">Baby Yoda</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/baby-yoda.svg" class="card-img-top" alt="Baby Yoda">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>

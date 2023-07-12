@@ -1,5 +1,8 @@
-@import url("global.css");
-@import url("controls.css");
-@import url("header.css");
-@import url("products.css");
-@import url("footer.css");
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    background-image: url(https://placekitten.com/96/139);
+}
+
+.bg-body-tertiary {
+    background-color: red !important;
+}
